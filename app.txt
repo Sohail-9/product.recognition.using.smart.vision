@@ -1,0 +1,59 @@
+For Greptile & CodeRabbit:
+
+Create separate GitHub organizations or use distinct repositories
+
+Install each GitHub App with webhook configuration​
+
+Set up webhook forwarding using Smee.io for local testing​
+
+Trial Repository Configuration:
+
+Create dedicated test branches across all repositories:
+
+trial-tracefox-batch-1
+
+trial-greptile-batch-1
+
+trial-coderabbit-batch-1
+
+This isolates testing activity from production workflows.​
+
+Phase 3: Design Test Cases (Week 2)
+
+Create a standardized test PR portfolio with known issues to ensure comparable evaluation:​
+
+Test PR Categories (15-20 PRs per tool):
+
+Bug Fixes (3-5 PRs)
+
+Known security vulnerabilities (SQL injection, XSS)
+
+Logic errors in business logic
+
+Race conditions in concurrent code
+
+New Features (5-7 PRs)
+
+Multi-file changes across services
+
+API endpoint additions with authentication
+
+Database schema migrations
+
+Refactoring (3-5 PRs)
+
+Code duplication elimination
+
+Performance optimizations
+
+Architectural pattern improvements
+
+Edge Cases (2-3 PRs)
+
+Large PRs (500+ lines changed)
+
+Cross-repository dependencies
+
+Breaking changes requiring coordination
+
+Standardized Issue Injection:
